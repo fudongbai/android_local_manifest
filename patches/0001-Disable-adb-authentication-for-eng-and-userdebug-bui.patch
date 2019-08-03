@@ -1,0 +1,27 @@
+From bb892ea58e12169bba437fcc2b8e5551be4f35c2 Mon Sep 17 00:00:00 2001
+From: Fudong Bai <fudongbai@gmail.com>
+Date: Sat, 3 Aug 2019 17:00:37 +0800
+Subject: [PATCH] Disable adb authentication for eng and userdebug build
+
+Change-Id: I2b1e1db6230f0a374a01a2d9153e6ba52a99e17a
+Signed-off-by: Fudong Bai <fudongbai@gmail.com>
+---
+ config/common.mk | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/common.mk b/config/common.mk
+index 4f04a76..4894a6b 100644
+--- a/config/common.mk
++++ b/config/common.mk
+@@ -26,7 +26,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
+ endif
+ 
+-ifeq ($(TARGET_BUILD_VARIANT),eng)
++ifeq ($(filter userdebug eng,$(TARGET_BUILD_VARIANT)),)
+ # Disable ADB authentication
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
+ else
+-- 
+2.7.4
+
