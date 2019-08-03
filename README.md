@@ -1,4 +1,4 @@
-Local manifests to build LineageOS 15.1 for [Raspberry Pi 3](http://konstakang.com/devices/rpi3/LineageOS15.1).
+Local manifests to build LineageOS 16.0 for [Raspberry Pi 3](http://konstakang.com/devices/rpi3/LineageOS16.0).
 
 How to build:
 -------------
@@ -14,12 +14,12 @@ sudo apt-get install kpartx python-mako
 3. Initialize repo:
 
 ```
-repo init -u git://github.com/LineageOS/android.git -b lineage-15.1
-curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi3.xml -O -L https://raw.githubusercontent.com/lineage-rpi/android_local_manifest/lineage-15.1/manifest_brcm_rpi3.xml
+repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
+curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi3.xml -O -L https://raw.githubusercontent.com/lineage-rpi/android_local_manifest/lineage-16.0/manifest_brcm_rpi3.xml
 repo sync
 ```
 
-4. Apply [patches](https://github.com/lineage-rpi/android_local_manifest/tree/lineage-15.1/patches):
+4. Apply [patches](https://github.com/lineage-rpi/android_local_manifest/tree/lineage-16.0/patches):
 
 ```
 cd path/to/project
