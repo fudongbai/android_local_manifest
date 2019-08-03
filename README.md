@@ -15,8 +15,8 @@ sudo apt-get install kpartx python-mako
 
 ```
 repo init -u git://github.com/LineageOS/android.git -b lineage-16.0
-curl --create-dirs -L -o .repo/local_manifests/manifest_brcm_rpi3.xml -O -L https://raw.githubusercontent.com/lineage-rpi/android_local_manifest/lineage-16.0/manifest_brcm_rpi3.xml
-repo sync
+git clone https://github.com/fudongbai/android_local_manifest .repo/local_manifests -b lineage-16.0
+repo sync -c
 ```
 
 4. Apply [patches](https://github.com/lineage-rpi/android_local_manifest/tree/lineage-16.0/patches):
