@@ -2,8 +2,10 @@
 <manifest>
     <!-- Raspberry Pi 3 -->
     <project path="device/brcm/rpi3" name="fudongbai/android_device_brcm_rpi3" />
+    <project path="device/brcm/rpi3b" name="fudongbai/android_device_brcm_rpi3b" />
     <project path="kernel/brcm/rpi3" name="fudongbai/android_kernel_brcm_rpi3" />
     <project path="vendor/brcm" name="fudongbai/proprietary_vendor_brcm" />
+    <project path="hardware/brcm/rpi3" name="fudongbai/hardware_rpi" />
 
     <!-- LineageOS additions -->
     <project path="external/i2c-tools" name="lineage-rpi/android_external_i2c-tools" />
@@ -11,4 +13,10 @@
     <!-- LineageOS replacements -->
     <remove-project name="platform/external/swiftshader"/>
     <project path="external/swiftshader" name="lineage-rpi/android_external_swiftshader" />
+
+    <remove-project name="platform/external/drm_gralloc"/>
+    <project path="external/drm_gralloc" name="fudongbai/external_drm_gralloc" />
+    <remove-project name="platform/external/mesa3d"/>
+    <project path="external/mesa3d" name="fudongbai/external_mesa3d" />
+
 </manifest>
