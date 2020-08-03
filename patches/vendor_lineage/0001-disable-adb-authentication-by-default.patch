@@ -1,21 +1,21 @@
-From 76f67ba2bbcf38c8927fe358fc761dcfb0fa1ce5 Mon Sep 17 00:00:00 2001
+From 9a34124aefaa4162eee34fff7d07f3af16b6cbcf Mon Sep 17 00:00:00 2001
 From: Fudong Bai <fudongbai@gmail.com>
-Date: Sat, 3 Aug 2019 17:00:37 +0800
+Date: Mon, 3 Aug 2020 14:39:11 +0800
 Subject: [PATCH] Disable adb authentication for eng and userdebug
 
-Change-Id: I2b1e1db6230f0a374a01a2d9153e6ba52a99e17a
+Change-Id: I6be40a5e02bc14104a16018d7bec2c4595906d4f
 Signed-off-by: Fudong Bai <fudongbai@gmail.com>
 ---
  config/common.mk | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/config/common.mk b/config/common.mk
-index 4f04a76..2e6aa51 100644
+index 19571c0e..627b39c8 100644
 --- a/config/common.mk
 +++ b/config/common.mk
-@@ -26,7 +26,7 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
- PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
- endif
+@@ -16,7 +16,7 @@ endif
+ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+     ro.build.selinux=1
  
 -ifeq ($(TARGET_BUILD_VARIANT),eng)
 +ifneq ($(filter userdebug eng,$(TARGET_BUILD_VARIANT)),)
@@ -23,5 +23,5 @@ index 4f04a76..2e6aa51 100644
  PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
  else
 -- 
-2.7.4
+2.17.1
 
