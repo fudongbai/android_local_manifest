@@ -19,4 +19,41 @@
     <remove-project name="platform/external/mesa3d"/>
     <project path="external/mesa3d" name="fudongbai/external_mesa3d" />
 
+    <remove-project name="LineageOS/android_hardware_nxp_nfc"/>
+    <remove-project name="LineageOS/android_hardware_intel_bootstub"/>
+    <remove-project name="LineageOS/android_hardware_intel_common_libmix"/>
+    <remove-project name="LineageOS/android_hardware_intel_common_utils"/>
+    <remove-project name="LineageOS/android_hardware_intel_img_hwcomposer"/>
+    <remove-project name="LineageOS/android_hardware_qcom_audio"/>
+    <remove-project name="LineageOS/android_hardware_qcom_gps"/>
+    <remove-project name="LineageOS/android_hardware_qcom_bt"/>
+    <remove-project name="LineageOS/android_hardware_qcom_vr"/>
+    <remove-project name="LineageOS/android_hardware_qcom_fm"/>
+    <remove-project name="LineageOS/android_hardware_qcom_data_ipacfg-mgr"/>
+    <remove-project name="LineageOS/android_hardware_qcom_thermal"/>
+    <remove-project name="LineageOS/android_hardware_qcom_media"/>
+    <remove-project name="LineageOS/android_hardware_qcom_camera"/>
+    <remove-project name="LineageOS/android_hardware_qcom_bootctrl"/>
+    <remove-project name="LineageOS/android_hardware_qcom_keymaster"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm710_display"/>
+    <remove-project name="LineageOS/android_hardware_qcom_wlan"/>
+    <remove-project name="LineageOS/android_hardware_qcom_power"/>
+    <remove-project name="LineageOS/android_hardware_qcom_display"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_bt"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_vr"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_gps"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_data_ipacfg-mgr"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_media"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_thermal"/>
+    <remove-project name="LineageOS/android_hardware_qcom_sdm845_display"/>
+    <remove-project name="LineageOS/android_device_qcom_sepolicy"/>
+    <remove-project name="LineageOS/android_device_qcom_sepolicy-legacy"/>
+    <remove-project name="platform/hardware/qcom/sdm710/vr"/>
+    <remove-project name="platform/hardware/qcom/sdm710/data/ipacfg-mgr"/>
+    <remove-project name="platform/hardware/qcom/sdm710/gps"/>
+    <remove-project name="platform/hardware/qcom/sdm710/media"/>
+    <remove-project name="platform/hardware/qcom/sdm710/thermal"/>
+    <remove-project name="platform/hardware/qcom/neuralnetworks/hvxservice"/>
+    <remove-project name="platform/hardware/akm"/>
+    <remove-project name="platform/hardware/marvell/bt"/>
 </manifest>
